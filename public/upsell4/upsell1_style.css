@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:500,600&display=swap');
+
+body, html { overflow-x:hidden; }
+body{
+    font-family:"Lato", sans-serif, Arial;
+    margin:0;
+    padding:0;
+    width: auto !important;
+    overflow-x: hidden !important;
+}
+.bigwrap{
+    background: url(../img/bg.jpg) top center no-repeat;
+    background-size: cover;
+    border-bottom:4px solid #e1e1e1;
+}
+.toprow{
+    border-bottom: 2px solid #d7d7d7
+}
+.special{
+    position:absolute;
+    z-index:999;
+}
+h4{
+    color:#cb1313;
+    font-weight:bold;
+}
+h1{
+    font-size:48px;
+    font-weight: 900;
+    color:#000;
+}
+.hurry{
+    color:#cb1313;
+    font-weight:bold;
+    font-size:35px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.footer{
+    border-top:3px solid #e1e1e1;
+    text-align: center;
+    padding-top:20px;
+    margin-top:50px;
+}

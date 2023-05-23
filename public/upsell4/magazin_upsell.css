@@ -1,0 +1,12 @@
+#magazin_upsell .cancel_program {
+    color: #00f;
+    text-decoration: underline;
+    font: bold italic 16px Arial;
+}
+
+#magazin_upsell .bottom_text {
+    font-size: 11px;
+    margin: 10px auto;
+    line-height: 20px;
+    max-width: 790px;
+}

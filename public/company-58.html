@@ -1,0 +1,40 @@
+<script type="text/javascript" src="https://revenue.webhub.software/revenue-media-upsell/revenue-media-upsell?campaignId=58&&productId=28&salesUrl=http://test.com&successUrl=http://test.com/success&failureUrl=http://test.com/failure&variant=upsell4"></script>
+<button onclick="window.revenueMediaUpsell({
+	firstName: 'firstName',
+	lastName: 'lastName',
+	address1: 'address1',
+	address2: 'address2',
+	postalCode: '00012',
+	city: 'city',
+	state: 'NY',
+	country: 'US',
+	emailAddress: 'test@mail.com',
+	phoneNumber: '112333399',
+	cardNumber: '0000000000000000',
+	cardMonth: '10',
+	cardYear: '2022',
+	cardSecurityCode: '123',
+})">
+	Upsell
+</button>
+
+<!-- If exists checkbox for auto upsalle -->
+<div>
+	<input
+	type="checkbox"
+	name="revenue-media-upsell-checkbox"
+	class="revenue-media-upsell-checkbox"
+	checked>
+	<label for="revenue-media-upsell-checkbox">Agree</label>
+</div>
+
+<!-- If is necessary to intercept events after upsalle -->
+<script type="text/javascript">
+	window.addEventListener('RevenueMediaBannerSuccess', (e) => {
+		console.log('e', JSON.parse(e.detail).data.message);
+	});
+
+	window.addEventListener('RevenueMediaBannerFailure', (e) => {
+		console.log('e', e);
+	});
+</script>

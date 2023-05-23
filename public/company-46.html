@@ -1,0 +1,148 @@
+<script type="text/javascript" src="https://rm.bondar.agency/revenue-media-upsale.js"></script>
+<button 
+	class="revenue-media-upsalle"
+	onclick="window.revenueMediaUpsalleFire(46, 252, {
+		/**
+		 * @type {string}
+		 * required
+		 * Client name
+		 */
+		firstName: 'Test',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client surname
+		 */
+		lastName: 'lastName',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client main address
+		 */
+		address1: 'address1',
+
+		/**
+		 * @type {string}
+		 * optional
+		 * Client optional address
+		 */
+		address2: 'address2',
+		
+		/**
+		 * @type {string}
+		 * required
+		 * Client address postal code
+		 */
+		postalCode: '00012',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client city
+		 */
+		city: 'Rome',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client state (Format like NY, CA, etd...)
+		 */
+		state: 'NY',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client country ISO code (Format like US, UA, RU, etd...)
+		 */
+		country: 'US',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client email address
+		 */
+		emailAddress: 'test@gmai.com',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client phone number (only numbers, like 112333399)
+		 */
+		phoneNumber: '112333399',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client card number
+		 */
+		cardNumber: '0000000000000000',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client card expiration mount (1 - 12)
+		 */
+		cardMonth: '10',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client card expiration year (like 2022)
+		 */
+		cardYear: '2022',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Client card security code
+		 */
+		cardSecurityCode: '123',
+
+		/**
+		 * @type {string}
+		 * required
+		 * Source site name
+		 */
+		salesUrl: 'https://coral-cbd.com/test_gum_1/thank-you.php',
+
+		/**
+		 * @type {string}
+		 * optional
+		 * Redirect to url after order success 
+		 */
+		successUrl: 'https://coral-cbd.com/test_gum_2/desktop/thank-you.php',
+
+		/**
+		 * @type {string}
+		 * optional
+		 * Redirect to url after order failure 
+		 */
+		failureUrl: 'https://coral-cbd.com/test_gum_2/desktop/thank-you.php',
+	})">
+	Upsale
+</button>
+
+<!-- If exists checkbox for auto upsalle -->
+<div>
+	<input
+		type="checkbox"
+		class="revenue-media-upsalle-checkbox" 
+		name="revenue-media-upsalle-checkbox"
+		checked>
+	<label for="revenue-media-upsalle-checkbox">Agree</label>
+</div>
+
+<!-- If is necessary to intercept events after upsalle -->
+<script type="text/javascript">
+	window.addEventListener('RevenueMediaBannerSuccess', (e) => {
+		console.log('e', JSON.parse(e.detail).data.message);
+	});
+
+	window.addEventListener('RevenueMediaBannerFailure', (e) => {
+		console.log('e', e);
+	});
+</script>
+</body>
+</html>
